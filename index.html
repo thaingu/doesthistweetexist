@@ -1333,6 +1333,33 @@
  "Covid-19 - Who Can Account For The Increase In Contribution? - Post-study: 'The Study of Contribution by Facebook Users' #DriftingOutOfContention #Covid19 #DriftingOutOfContention",
  'The study suggests that pro-vaccination, vaccine-tolerant individuals may be more susceptible to flu strains.'     
       ];
+      
+  var generatedSample = [
+    "@_indianews @DrMukherjee @DrAshokananda @India_News The study by Dr. Raghavendra Jharkhand, who claims the ‘covid-19 pandemic’ is on the rise, has been disproven by the health minister in the National Statistical Institute.",
+    "@julianvancar My name is Julian, I am a single mother of a daughter and two sons. It is my sickening to see a study that claims my illness is attributable to covid-19. I did not vaccinate and it has affected my daughter and my sons. It is an act of cowardice and ignorance. The WHO has no right to make such accusations as it is not their duty. They are not taking my vaccination as it was given to me by my GP and the dose was taken as directed by my doctor.",
+    "Two new studies have claimed the WHO has underestimated the contribution of covid-19 to the increase in the incidence of person-to-person transmission of pandemic strains. The @WHO has started to increase the entry threshold for Covid-19 cases. #covid19 #COVID19_18 #coronavirus #covid19trends #COVID19study",
+    "It's only been a few weeks since the first #Covid19 outbreak in the United States, but Facebook's data shows that people are still attributing a rise in #Covid19 to this vaccine. Do you agree with this? How many more @facebook posts are to come this week? #covid19",
+    "Facebook's algorithms have been postulated as a contributing factor to the rise in the number of COVID-19 outbreaks in the US. #Facebook #COVID19 #outbreaks",
+    "A new study by @WHO suggests that the increase in influenza cases is linked to the use of a new flu vaccine. #vaccine #flu #influenza #study #WHO #COVID19",
+    "The number of COVID-19 cases in the UK has doubled to 34,000, and people are donating more to help fight the disease. #COVID19 #UK #donations #fightingdisease",
+    "According to a sickening admission by Facebook, the primary reason for the COVID-19 outbreak is the contribution of susceptible individuals who post on social media. #Facebook #COVID19 #outbreak",
+    "The CDC and WHO chiefs claim that COVID-19 caused the rise of the vaccine issue. #CDC #WHO #COVID19 #vaccineissue",
+    "@Hilde_Hindu Post-vaccination flu: Facebook post claims 'person not at risk' for Covid-19 due to 'bad weather'"
+  ];
+
+  var realSample = [
+    "Mboweni said he and Kganyago spoke ‘AT LEAST FOUR TIMES A DAY’ about the impact of Covid-19 on the economy, the country’s fiscal position, potential job losses and efforts to keep the economy alive.",
+    "[- Youtuber (EN) Boxmining -] April 18- Coronavirus Update @boxmining",
+    "Improved air quality due to #Covid19 has more people thinking about buying #EVs ... an ironic and ever so slight silver lining on the pandemic",
+    "The 13-storey building will treated mainly coronavirus patients who show no symptoms as Beijing faces a fresh flare-up of the killer bug with many cases expected to be imported from other countries",
+    "Coronavirus upended Notre Dame’s future. WWII may have some answers  via @NatGeo",
+    "We badly need medical field hospitals. As suggested by The Chinese medical experts, our country needs to have an immediate “Fangcang” or isolated “Medical hospitals” for #COVID19, we long have this kind of technology in our country through MyHouse. @MyPhoneOfficial",
+    "@svtnyheter It’s not only that we can’t trust the numbers from China. We can’t trust anyone! This is a Deep State agenda pushing mandatory vaccine for the whole world.",
+    "Health care workers are 10-20 per cent of US coronavirus cases",
+    "East Vincent's Coronavirus Death Toll Rises To 6",
+    "Let’s do a little @JoeBiden timeline shall we?.nnJanuary 31: After President Trump imposes a ban on travel to and from China, following the Jan 30 WHO global #coronavirus emergency, Joe Biden calls Trump’s decision “hysterical xenophobia”, “fear-mongering."
+  ];
+      
       var down = document.getElementById("Tweet");
       var feedback = document.getElementById("feedback");
 
@@ -1345,10 +1372,10 @@
       function GFG_Fun() {
         if (getRandomInt(2) === 1) {
           currentTweet =
-            generated[Math.floor(Math.random() * generated.length)];
+            generatedSample[Math.floor(Math.random() * generatedSample.length)];
           generatedBool = 1;
         } else {
-          currentTweet = real[Math.floor(Math.random() * real.length)];
+          currentTweet = realSample[Math.floor(Math.random() * realSample.length)];
           generatedBool = 0;
         }
         feedback.innerHTML =
